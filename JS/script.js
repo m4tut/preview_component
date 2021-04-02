@@ -13,9 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const openShere = () => {
-        profileButtonBtnElem.addEventListener('click', (event) => {
-            const target = event.target;
-            if (target.classList.contains('btn_active')) {
+        profileButtonBtnElem.addEventListener('click', () => {
+            if (profileButtonBtnElem.classList.contains('btn_active')) {
                 shareElem.classList.remove('share_active');
                 profileButtonBtnElem.classList.remove('btn_active');
                 document.removeEventListener('keydown', escapeHandler);

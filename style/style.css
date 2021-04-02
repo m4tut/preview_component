@@ -167,3 +167,9 @@ body {
     fill: var(--GrayishBlue);
     transition-duration: 0.4s;
 }
+
+/* ########################## */
+/* media */
+@media (max-width: 975px) {
+    
+}
