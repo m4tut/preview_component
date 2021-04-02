@@ -171,5 +171,60 @@ body {
 /* ########################## */
 /* media */
 @media (max-width: 975px) {
-    
+    .center {
+        height: 515px;
+        width: 325px;
+    }
+
+    .block {
+        height: 515px;
+        width: 325px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 42% 58%;
+    }
+
+    .block_img {
+        width: inherit;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .block_img img {
+        width: inherit;
+        height: auto;
+    }
+
+    .block_content {
+        margin: 35px;
+    }
+
+    .text_title {
+        font-size: 1rem;
+    }
+
+    .profile_avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile_button-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* button */
+    .share {
+        width: 325px;
+        height: 65px;
+        top: -15px;
+        right: -35px;
+        z-index: 1;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .triangle {
+        display: none;
+    }
 }
