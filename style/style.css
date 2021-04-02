@@ -33,11 +33,19 @@ body {
     grid-template-columns: 40% 60%;
     background-color: var(--White);
     border-radius: 10px;
-    overflow: hidden;
 }
 
 .block_img {
-    background-image: url(../images/drawers.jpg);
+    width: auto;
+    height: inherit;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+}
+
+.block_img img {
+    display: block;
+    width: auto;
+    height: inherit;
     background-size: cover;
 }
 
@@ -88,12 +96,74 @@ body {
 }
 
 .profile_button {
+    position: relative;
     margin: auto 0 auto auto;
+}
+
+.profile_button-btn {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     background-color: var(--LightGrayishBlue);
     outline: none;
     border: none;
+}
 
+.btn_active {
+    background-color: var(--DesaturatedDarkBlue);
+}
+.btn_active svg path {
+    fill: var(--LightGrayishBlue);
+}
+
+.share {
+    width: 250px;
+    height: 55px;
+    background-color: var(--VeryDarkGrayishBlue);
+    position: absolute;
+    top: -85px;
+    right: -106px;
+    z-index: 1;
+
+    border-radius: 10px;
+
+    display: none;
+    align-items: center;
+}
+
+.share_active {
+    display: flex;
+}
+
+.triangle {
+    position: absolute;
+    bottom: -15px;
+    right: 45%;
+    z-index: 1;
+
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid var(--VeryDarkGrayishBlue);
+}
+
+.share_text {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--DesaturatedDarkBlue);
+    margin-left: 35px;
+    margin-right: 10px;
+    letter-spacing: 5px;
+}
+
+.share_link {
+    margin-right: 5px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.share_link:hover svg path {
+    fill: var(--GrayishBlue);
+    transition-duration: 0.4s;
 }
