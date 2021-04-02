@@ -177,8 +177,8 @@ body {
     }
 
     .block {
-        height: 515px;
-        width: 325px;
+        height: 505px;
+        width: 325px;git 
         grid-template-columns: 1fr;
         grid-template-rows: 42% 58%;
     }
@@ -218,7 +218,7 @@ body {
     .share {
         width: 325px;
         height: 65px;
-        top: -10px;
+        top: -15px;
         right: -35px;
         z-index: 1;
         border-radius: 0 0 10px 10px;
